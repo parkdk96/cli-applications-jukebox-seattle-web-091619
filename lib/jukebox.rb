@@ -12,7 +12,7 @@ def play(songs)
   song = gets.strip
   if songs.include?(song)
     puts "Playing #{song}"
-  elsif song.to_i < songs.length + 1
+  elsif song.to_i < songs.length + 1 && 0 < song.to_i 
     puts "Playing #{songs[song.to_i + 1]}"
   else
     puts "Invalid input, please try again"
