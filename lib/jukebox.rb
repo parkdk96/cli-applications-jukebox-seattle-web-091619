@@ -7,12 +7,14 @@ def help
   puts "- exit : exits this program"
 end
 
-def play(song)
+def play(songs)
   
 end
 
-def list 
-  
+def list (songs)
+  puts "Please enter a song name or number:"
+  song = gets.strip
+  if songs.includes?(song)
 end
 
 def exit_jukebox
