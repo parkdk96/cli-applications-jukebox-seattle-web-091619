@@ -10,7 +10,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song = gets.strip
-  if songs.includes?(song)
+  if songs.include?(song)
     puts "Playing #{song}"
   else 
     puts "Invalid input, please try again"
@@ -18,7 +18,7 @@ def play(songs)
 end
 
 def list (songs)
-  songs.each_with_index {|name, index| puts "#{index + 1}. #{track} "}
+  songs.each_with_index {|track, index| puts "#{index + 1}. #{track} "}
 end
 
 def exit_jukebox
