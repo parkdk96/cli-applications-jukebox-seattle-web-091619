@@ -4,6 +4,7 @@ def say_hello(name)
 end
 
 puts "Enter your name:"
-users_name = gets.strip
+#strip removes whitespace as well as \n
+users_name = gets
 
 puts say_hello(users_name)
