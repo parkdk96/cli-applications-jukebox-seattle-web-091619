@@ -8,13 +8,15 @@ def help
 end
 
 def play(songs)
-  
-end
-
-def list (songs)
   puts "Please enter a song name or number:"
   song = gets.strip
   if songs.includes?(song)
+    
+end
+
+def list (songs)
+  songs.each_with_index
+    
 end
 
 def exit_jukebox
