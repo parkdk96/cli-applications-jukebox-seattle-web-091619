@@ -5,6 +5,6 @@ end
 
 puts "Enter your name:"
 #strip removes whitespace as well as \n
-users_name = gets
+users_name = gets.strip
 
 puts say_hello(users_name)
